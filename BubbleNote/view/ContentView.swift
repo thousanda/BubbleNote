@@ -10,11 +10,32 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        Text("Clipped text in a circle")
-            .frame(width: 175, height: 100)
-            .foregroundStyle(Color.white)
-            .background(Color.black)
-            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+        NavigationStack {
+            List {
+                NavigationLink(destination: NoteDetailView()) {
+                    Text("Item1")
+                }
+                NavigationLink(destination: NoteDetailView()) {
+                    Text("Item2")
+                }
+                NavigationLink(destination: NoteDetailView()) {
+                    Text("Item3")
+                }
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .bottomBar) {
+                    Spacer()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Image(systemName: "note.text")
+                    }
+                    Spacer()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Image(systemName: "gearshape.fill")
+                    }
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
