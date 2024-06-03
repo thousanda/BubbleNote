@@ -98,7 +98,7 @@
 		BB6FBA3D2C0D7C3A00C1D5A8 /* BubbleNote */ = {
 			isa = PBXGroup;
 			children = (
-				BB6FBA6C2C0D9C7100C1D5A8 /* view */,
+				BB6FBA6C2C0D9C7100C1D5A8 /* View */,
 				BB6FBA3E2C0D7C3A00C1D5A8 /* BubbleNoteApp.swift */,
 				BB6FBA422C0D7C3B00C1D5A8 /* Assets.xcassets */,
 				BB6FBA442C0D7C3B00C1D5A8 /* Preview Content */,
@@ -131,14 +131,14 @@
 			path = BubbleNoteUITests;
 			sourceTree = "<group>";
 		};
-		BB6FBA6C2C0D9C7100C1D5A8 /* view */ = {
+		BB6FBA6C2C0D9C7100C1D5A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BB6FBA6A2C0D90D100C1D5A8 /* NoteDetailView.swift */,
 				BB6FBA402C0D7C3A00C1D5A8 /* ContentView.swift */,
 				BB2E01402C0D9F85008844A1 /* LaunchView.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
